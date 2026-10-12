@@ -1,4 +1,4 @@
-let body = document.querySelector("body")
+let body = document.getElementById("main-body")
 body.style.display = "flex"
 body.style.flexDirection = "column"
 body.style.alignItems = "center"
@@ -7,6 +7,7 @@ body.style.height = "690px"
 body.style.borderRadius = "25px"
 
 let container = document.createElement("div")
+container.id = "main-container"
 container.style.borderRadius = "25px"
 container.style.background = "#FFFFFF"
 container.style.shadowBox = "0px 2px 5px lightgrey"
@@ -20,6 +21,7 @@ container.style.alignItems = "center"
 body.appendChild(container)
 
 let heading = document.createElement("h1")
+heading.id = "main-heading"
 heading.textContent = "Wordle Game"
 heading.style.fontFamily = "Arial"
 heading.style.color = "#333"
@@ -60,6 +62,7 @@ for(let i=0; i < 6; i++) {
 
 
 let inputContainer = document.createElement("div")
+inputContainer.id = "input-container"
 inputContainer.style.display = "flex"
 inputContainer.style.flexDirection = "row"
 inputContainer.style.gap = "5px"
